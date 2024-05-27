@@ -1,0 +1,1491 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+ 
+    padding: 0px;
+    
+    height: 100vh;
+    top: 0; /* Fixa o elemento no topo da tela */
+    /* background-color: #ffffff; Adicione uma cor de fundo ao header */
+    /* z-index: 999; Certifique-se de que o header esteja acima de outros elementos */
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    /* position: fixed; */ 
+    width: 100%;
+    border-radius: 5px;
+    background-image: url(./src/assets/imagens/aa.avif);
+    background-size: cover; /* Para cobrir todo o espaço do logo */
+    background-position: center; /* Centraliza a imagem */
+
+    
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#logo {
+    
+    width: 90%;
+    height: 90%;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 3%;
+    
+    
+}
+
+#logo:hover {
+    animation: pulse 1s ease infinite;
+    
+
+}
+#logo img {
+    
+    width: 450px;
+    height: 450px;
+    
+    
+}
+
+
+/* ------------ INICIO  CARROUSELLLLL------ */
+#primeiroConteudo {
+    
+    height: 100vh;
+    
+    margin-top: 5%;
+}
+
+#slides{
+    width: 95%;
+    height: 100%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.carrossel {
+    
+
+    width: 100%;
+    height: 60vh;
+    
+}
+
+[data-component="slideshow"] .slide {
+    display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+    display: block;
+}
+
+#div_imgs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(85, 107, 47, 0);  
+    
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-color: #10afc400 ;
+    position: relative;
+    bottom: 20px;
+    
+}
+.descricaoSlide {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 98%;
+    height: 20%;
+    
+}
+.h2 {
+    font-size: 28px; 
+    font-weight: bold; 
+}
+
+.h3 {
+    font-size: 18px; 
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: 100px;
+}
+
+.slide img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+
+}
+
+/* ------------ FIM CARROUSELLLLL------ */
+
+
+
+/* ------------ INICIO CONTEUDO DE DESCRIÇÃO------ */
+#conteudomeio {
+    
+
+    padding: 20px;
+    margin-bottom: 5%;
+    padding: 20px;
+    height: 70vh;
+    margin-top: 4%;
+   
+    
+    
+}
+#descricao {
+  
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com larguras iguais */
+    gap: 40px; /* Espaçamento entre as colunas e linhas */
+    padding: 20px; /* Padding interno */
+    justify-content: center; 
+    align-items: center;/* Centraliza o conteúdo horizontalmente */
+}
+
+#container-vsf img{
+    
+    width:100%;
+    height: 300px;
+    border-radius: 10px;
+}
+#container-vsf img:hover{
+   scale:1.2;
+}
+.conteudoMeio{
+    
+    display: flex;
+    position: absolute  ;
+    flex-direction: column;
+    border-radius: 12px;
+     width:29%;
+     height: 59%;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0 0 10px 2px rgb(180, 180, 180);
+     font-family: 'modelo-airbnb';
+     margin: 0;
+     padding: 0;
+     justify-content: space-between;
+     align-items: center;
+     
+     
+     
+ }
+
+.tituloConteudoMeio {
+    font-size: 27px; 
+    color: #333; /
+   
+  }
+  
+ 
+  .icone {
+    color: #007bff; 
+    font-size: 36px; 
+    margin: 30px 0; 
+    margin-bottom: 30px;
+  }
+  
+ 
+  .descricaoConteudoMeio {
+    font-size: 20px; 
+    color: #666;
+    text-align: center; 
+    margin-bottom: 15px;
+    
+  }
+
+
+  /* ------------ FIM CONTEUDO DE DESCRIÇÃO------ */
+
+
+  #porfolio {
+    width: 100%;
+    padding: 10px;
+    height: 80vh;
+    
+  }
+  
+  #portfolioCima {
+    
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #porfolioBaixo {
+    
+    margin-top: 3%;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    justify-content: center;
+    
+    /* background-image: url(src/assets/imagens/abc.jpg);
+    background-size: cover; 
+    background-position: center; Centraliza a imagem de fundo */
+    position: relative; /
+  }
+  
+  .swiper-slide {
+    
+    display: flex;
+    height: 60vh;
+    background-color: #f8b60000;
+    
+   
+
+}
+
+.swiper-slide img{
+    margin-top: 2%;
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+
+
+
+.swiper-slide img:hover {
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+
+.section-title {
+    top:100px;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title p{
+    font-size: 24px;
+    padding-bottom: 30px;
+    
+   
+}
+
+
+
+#contato {
+    
+    
+    height: 70vh;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.whatsapp-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999; /* Certifique-se de que o z-index esteja alto o suficiente para estar acima de outros elementos */
+}
+.whatsapp-icon {
+    color: green; 
+    font-size: 50px;
+    transition: transform 0.3s ease;
+}
+.instagram-icon{
+    color: brown;
+    font-size: 50px;
+
+}
+.whatsapp-icon:hover {
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.instagram-link {
+    color: brown;
+    font-size: 50px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.instagram-icon:hover {
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+
+.icone-whatsapp{
+    color: green; 
+    font-size: 50px;
+    transition: transform 0.3s ease;
+}
+
+.icone-whatsapp:hover{
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+
+}
+#contato a {
+    margin: 0 20px; /* Espaçamento entre os ícones */
+}
+
+#contato img {
+    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: auto;
+}
+
+
+#contato h2{
+    margin-top: 40%;
+}
+
+
+#footer {
+    width: 100%;
+    
+    height: 15vh;
+    margin-top: 5%;
+    display: flex;
+    position: absolute;
+    background-color: #292626ed;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'modelo-airbnb';
+    transition: 0.3s;
+}
+
+
+.icone-l.icone-linkedin{
+    transform: scale(1.5); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+
+}
+
+
+.icone-linkedin{
+    font-size: 35px;
+    transition: transform 0.3s ease;
+    
+   
+}
+
+
+/* RESPONSIVIDADE */
+
+
+
+
+@media only screen and (max-width: 350px) {
+    
+    #logo {
+    
+        width: 90%;
+        
+        height: 90%;
+        
+        
+    }
+    
+    #logo:hover {
+        scale: 1.0;
+        
+    
+    }
+    #logo img {
+        /* margin-bottom: 15%; */
+
+        height: 350px;
+        width: 350px;
+        
+        
+    } 
+  
+
+    .descricaoSlide {
+        
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: 93%;
+        height: 20%;
+        
+    }
+  
+
+    
+    
+   
+
+    .h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+        
+    }
+    
+    .h3 {
+        
+        font-size: 20px; 
+        
+    }
+   
+
+    #conteudomeio {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        margin-top: 15%;
+        
+        
+    
+    
+    }   
+
+    .conteudoMeio{
+        position: relative;
+        height: 30%;
+        width: 100%;
+        margin-bottom: 0vh;
+
+        
+
+    
+    }
+
+    #descricao {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+   
+    }
+    #descricao {
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas com larguras iguais */
+        grid-template-rows: repeat(1,35vh);
+        gap:4vh;
+        padding: 2,5vh; /* Padding interno */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        
+    }
+    [id^='descricao']{
+        width: 85vw;
+        
+    }
+    
+    .tituloConteudoMeio {
+        font-size: 24px;
+        /* margin-right: 100px; */
+    }
+ 
+    #porfolio {
+        
+        height: 70vh;
+        margin-top: 20px;
+        
+    }
+    #portfolioCima {
+      
+        margin-bottom: 4%;
+      }
+    #porfolioBaixo {
+        margin-bottom: 1%;
+       
+      }
+      
+      
+    
+    .swiper-slide img{
+        margin-top: 6%;
+        height: 50vh;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 0%;
+    }
+    
+    
+    
+    .swiper-slide img:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+    #contato {
+    
+        
+        height: 25vh;
+        margin-top: 40px;
+        
+    }
+    #footer{
+        height: 13vh;
+        margin-top: 19vh;
+    }
+    /* .container-footer {
+       margin-bottom: 3vh;
+       height: 10vh;
+       margin-right: 10%;
+       
+    } */
+    
+  }
+
+
+
+
+
+  @media only screen and (max-width: 480px) {
+    
+    #logo {
+    
+        width: 90%;
+        
+        height: 90%;
+        
+        
+    }
+    
+    #logo:hover {
+        scale: 1.0;
+        
+    
+    }
+    #logo img {
+        /* margin-bottom: 15%; */
+
+        height: 350px;
+        width: 350px;
+        
+        
+    } 
+  
+
+    .descricaoSlide {
+        
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: 93%;
+        height: 20%;
+        
+    }
+  
+
+    
+    
+   
+
+    .h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+        
+    }
+    
+    .h3 {
+        
+        font-size: 20px; 
+        
+    }
+   
+
+    #conteudomeio {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        margin-top: 15%;
+       
+        
+    
+    
+    }   
+
+    .conteudoMeio{
+        position: relative;
+        height: 50%;
+        width: 100%;
+        margin-bottom: 0vh;
+        
+
+        
+
+    
+    }
+
+    #descricao {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+   
+    }
+    #descricao {
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas com larguras iguais */
+        grid-template-rows: repeat(1,35vh);
+        gap:8vh;
+        padding: 2,5vh; /* Padding interno */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        
+    }
+    [id^='descricao']{
+        width: 85vw;
+        
+    }
+    
+    .tituloConteudoMeio {
+        font-size: 24px;
+        /* margin-right: 100px; */
+    }
+ 
+    #porfolio {
+        
+        height: 70vh;
+        margin-top: 20px;
+        
+    }
+    #portfolioCima {
+      
+        margin-bottom: 4%;
+      }
+    #porfolioBaixo {
+        margin-bottom: 1%;
+       
+      }
+      
+      
+    
+    .swiper-slide img{
+        margin-top: 6%;
+        height: 50vh;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 0%;
+    }
+    
+    
+    
+    .swiper-slide img:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+    #contato {
+    
+        
+        height: 25vh;
+        margin-top: 40px;
+        
+    }
+    #footer{
+        height: 13vh;
+        margin-top: 19vh;
+    }
+    /* .container-footer {
+       margin-bottom: 3vh;
+       height: 10vh;
+       margin-right: 10%;
+       
+    } */
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  @media only screen and (max-width: 550px) {
+    
+    
+    #logo {
+    
+        width: 90%;
+        
+        height: 90%;
+        
+        
+    }
+    
+    #logo:hover {
+        scale: 1.0;
+        
+    
+    }
+    #logo img {
+        /* margin-bottom: 15%; */
+
+        height: 500px;
+        width: 500px;
+        
+        
+    } 
+  
+
+    .descricaoSlide {
+        
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: 93%;
+        height: 20%;
+        
+    }
+  
+
+    
+    
+   
+
+    .h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+        
+    }
+    
+    .h3 {
+        
+        font-size: 20px; 
+        
+    }
+   
+
+    #conteudomeio {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        margin-top: 15%;
+        
+        
+    
+    
+    }   
+
+    .conteudoMeio{
+        position: relative;
+        height: 30%;
+        width: 100%;
+        margin-bottom: 0vh;
+
+        
+
+    
+    }
+
+    #descricao {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+   
+    }
+    #descricao {
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas com larguras iguais */
+        grid-template-rows: repeat(1,35vh);
+        gap:8vh;
+        padding: 2,5vh; /* Padding interno */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        
+    }
+    [id^='descricao']{
+        width: 85vw;
+        
+    }
+    
+    .tituloConteudoMeio {
+        font-size: 24px;
+        /* margin-right: 100px; */
+    }
+ 
+    #porfolio {
+        
+        height: 70vh;
+        margin-top: 20px;
+        
+    }
+    #portfolioCima {
+      
+        margin-bottom: 4%;
+      }
+    #porfolioBaixo {
+        margin-bottom: 1%;
+       
+      }
+      
+      
+    
+    .swiper-slide img{
+        margin-top: 6%;
+        height: 50vh;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 0%;
+    }
+    
+    
+    
+    .swiper-slide img:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+    #contato {
+    
+        
+        height: 25vh;
+        margin-top: 40px;
+        
+    }
+    #footer{
+        height: 13vh;
+        margin-top: 30vh;
+    }
+    /* .container-footer {
+       margin-bottom: 3vh;
+       height: 10vh;
+       margin-right: 10%;
+       
+    } */
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media only screen and (max-width: 660px) {
+    
+   
+    #logo {
+    
+        width: 90%;
+        
+        height: 90%;
+        
+        
+    }
+    
+    #logo:hover {
+        scale: 1.0;
+        
+    
+    }
+    #logo img {
+        /* margin-bottom: 15%; */
+
+        height: 500px;
+        width: 500px;
+        
+        
+    } 
+  
+
+    .descricaoSlide {
+        
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: 93%;
+        height: 20%;
+        
+    }
+  
+
+    
+    
+   
+
+    .h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+        
+    }
+    
+    .h3 {
+        
+        font-size: 20px; 
+        
+    }
+   
+
+    #conteudomeio {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        margin-top: 15%;
+        
+        
+    
+    
+    }   
+
+    .conteudoMeio{
+        position: relative;
+        height: 30%;
+        width: 100%;
+        margin-bottom: 0vh;
+
+        
+
+    
+    }
+
+    #descricao {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+   
+    }
+    #descricao {
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas com larguras iguais */
+        grid-template-rows: repeat(1,35vh);
+        gap:8vh;
+        padding: 2,5vh; /* Padding interno */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        
+    }
+    [id^='descricao']{
+        width: 85vw;
+        
+    }
+    
+    .tituloConteudoMeio {
+        font-size: 24px;
+        /* margin-right: 100px; */
+    }
+ 
+    #porfolio {
+        
+        height: 70vh;
+        margin-top: 20px;
+        
+    }
+    #portfolioCima {
+      
+        margin-bottom: 4%;
+      }
+    #porfolioBaixo {
+        margin-bottom: 1%;
+       
+      }
+      
+      
+    
+    .swiper-slide img{
+        margin-top: 6%;
+        height: 50vh;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 0%;
+    }
+    
+    
+    
+    .swiper-slide img:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+    #contato {
+    
+        
+        height: 25vh;
+        margin-top: 40px;
+        
+    }
+    #footer{
+        height: 13vh;
+        margin-top: 20vh;
+    }
+    /* .container-footer {
+       margin-bottom: 3vh;
+       height: 10vh;
+       margin-right: 10%;
+       
+    } */
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 900px) {
+    
+  
+
+    #logo {
+    
+        width: 90%;
+        
+        height: 90%;
+        
+        
+    }
+    
+    #logo:hover {
+        scale: 1.0;
+        
+    
+    }
+    #logo img {
+        /* margin-bottom: 15%; */
+
+        height: 500px;
+        width: 500px;
+        
+        
+    } 
+  
+
+    .descricaoSlide {
+        
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: 93%;
+        height: 20%;
+        
+    }
+  
+
+    
+    
+   
+
+    .h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+        
+    }
+    
+    .h3 {
+        
+        font-size: 20px; 
+        
+    }
+   
+
+    #conteudomeio {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        margin-top: 15%;
+        
+        
+    
+    
+    }   
+
+    .conteudoMeio{
+        position: relative;
+        height: 30%;
+        width: 100%;
+        margin-bottom: 0vh;
+
+        
+
+    
+    }
+
+    #descricao {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+   
+    }
+    #descricao {
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas com larguras iguais */
+        grid-template-rows: repeat(1,35vh);
+        gap:7vh;
+        padding: 2,5vh; /* Padding interno */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        
+    }
+    [id^='descricao']{
+        width: 85vw;
+        
+    }
+    
+    .tituloConteudoMeio {
+        font-size: 24px;
+        /* margin-right: 100px; */
+    }
+ 
+    #porfolio {
+        
+        height: 70vh;
+        margin-top: 20px;
+        
+    }
+    #portfolioCima {
+      
+        margin-bottom: 4%;
+      }
+    #porfolioBaixo {
+        margin-bottom: 1%;
+       
+      }
+      
+      
+    
+    .swiper-slide img{
+        margin-top: 6%;
+        height: 50vh;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 0%;
+    }
+    
+    
+    
+    .swiper-slide img:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+    #contato {
+    
+        
+        height: 25vh;
+        margin-top: 40px;
+        
+    }
+    #footer{
+        height: 13vh;
+        margin-top: 19vh;
+    }
+    /* .container-footer {
+       margin-bottom: 3vh;
+       height: 10vh;
+       margin-right: 10%;
+       
+    } */
+    
+  }
+
+
+
+  
+  
+  
+ 
+
+
+
+
+
+  
+
+
+
+  @media only screen and (max-width: 1000px) {
+    
+  
+
+    #logo {
+    
+        width: 90%;
+        
+        height: 90%;
+        
+        
+    }
+    
+    #logo:hover {
+        scale: 1.0;
+        
+    
+    }
+    #logo img {
+        /* margin-bottom: 15%; */
+
+        height: 500px;
+        width: 500px;
+        
+        
+    } 
+  
+
+    .descricaoSlide {
+        
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: 93%;
+        height: 20%;
+        
+    }
+  
+
+    
+    
+   
+
+    .h2 {
+        font-size: 30px; 
+        font-weight: bold; 
+        
+    }
+    
+    .h3 {
+        
+        font-size: 20px; 
+        
+    }
+   
+
+    #conteudomeio {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        margin-top: 15%;
+        
+        
+    
+    
+    }   
+
+    .conteudoMeio{
+        position: relative;
+        height: 30%;
+        width: 100%;
+        margin-bottom: 0vh;
+
+        
+
+    
+    }
+
+    #descricao {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+   
+    }
+    #descricao {
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas com larguras iguais */
+        grid-template-rows: repeat(1,25vh);
+        gap:10vh;
+        padding: 2,5vh; /* Padding interno */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        
+    }
+    [id^='descricao']{
+        width: 85vw;
+        
+    }
+    
+    .tituloConteudoMeio {
+        font-size: 24px;
+        /* margin-right: 100px; */
+    }
+ 
+    #porfolio {
+        
+        height: 70vh;
+        margin-top: 20px;
+        
+    }
+    #portfolioCima {
+      
+        margin-bottom: 4%;
+      }
+    #porfolioBaixo {
+        margin-bottom: 1%;
+       
+      }
+      
+      
+    
+    .swiper-slide img{
+        margin-top: 6%;
+        height: 50vh;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 0%;
+    }
+    
+    
+    
+    .swiper-slide img:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
+    #contato {
+    
+        
+        height: 25vh;
+        margin-top: 40px;
+        
+    }
+    #footer{
+        height: 13vh;
+        margin-top: 19vh;
+    }
+    /* .container-footer {
+       margin-bottom: 3vh;
+       height: 10vh;
+       margin-right: 10%;
+       
+    } */
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
