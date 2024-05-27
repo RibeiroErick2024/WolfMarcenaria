@@ -26,34 +26,24 @@ body {
     /* position: fixed; */ 
     width: 100%;
     border-radius: 5px;
-    background-image: url(./src/assets/imagens/aa.avif);
+    background: linear-gradient(to bottom right, black, white); 
     background-size: cover; /* Para cobrir todo o espaço do logo */
     background-position: center; /* Centraliza a imagem */
 
     
 }
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+
 
 
 #logo {
     
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-left: 3%;
+    margin-right: 3%;
     
     
 }
@@ -65,8 +55,10 @@ body {
 }
 #logo img {
     
-    width: 450px;
+    width: 650px;
     height: 450px;
+
+
     
     
 }
@@ -77,7 +69,7 @@ body {
     
     height: 100vh;
     
-    margin-top: 5%;
+    
 }
 
 #slides{
@@ -167,12 +159,12 @@ img {
     
 
     padding: 20px;
-    margin-bottom: 5%;
-    padding: 20px;
-    height: 70vh;
-    margin-top: 4%;
-   
     
+    padding: 20px;
+    height: 80vh;
+    margin-top: 4%;
+   background-color: rgb(58, 58, 61);
+    border-radius: 3%;
     
 }
 #descricao {
@@ -184,6 +176,7 @@ img {
     padding: 20px; /* Padding interno */
     justify-content: center; 
     align-items: center;/* Centraliza o conteúdo horizontalmente */
+    margin-top: 3%;
 }
 
 #container-vsf img{
@@ -224,14 +217,14 @@ img {
  
   .icone {
     color: #007bff; 
-    font-size: 36px; 
+    font-size: 50px; 
     margin: 30px 0; 
     margin-bottom: 30px;
   }
   
  
   .descricaoConteudoMeio {
-    font-size: 20px; 
+    font-size: 24px; 
     color: #666;
     text-align: center; 
     margin-bottom: 15px;
@@ -246,6 +239,7 @@ img {
     width: 100%;
     padding: 10px;
     height: 80vh;
+    margin-top: 5%;
     
   }
   
@@ -330,7 +324,7 @@ img {
     
     
     height: 70vh;
-    margin-top: 0%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,18 +332,18 @@ img {
 }
 .whatsapp-link {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
     z-index: 9999; /* Certifique-se de que o z-index esteja alto o suficiente para estar acima de outros elementos */
 }
 .whatsapp-icon {
     color: green; 
-    font-size: 50px;
+    font-size: 70px;
     transition: transform 0.3s ease;
 }
 .instagram-icon{
     color: brown;
-    font-size: 50px;
+    font-size: 70px;
 
 }
 .whatsapp-icon:hover {
@@ -358,7 +352,7 @@ img {
 
 .instagram-link {
     color: brown;
-    font-size: 50px;
+    font-size: 70px;
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
@@ -369,7 +363,7 @@ img {
 
 .icone-whatsapp{
     color: green; 
-    font-size: 50px;
+    font-size: 70px;
     transition: transform 0.3s ease;
 }
 
@@ -378,23 +372,24 @@ img {
 
 }
 #contato a {
-    margin: 0 20px; /* Espaçamento entre os ícones */
+    margin: 0 30px; /* Espaçamento entre os ícones */
 }
 
 #contato img {
-    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
     height: auto;
 }
 
 
 #contato h2{
     margin-top: 40%;
+    font-size: 50px;
 }
 
 
 #footer {
     width: 100%;
-    
+
     height: 15vh;
     margin-top: 5%;
     display: flex;
@@ -429,7 +424,7 @@ img {
 
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 320px) {
     
     #logo {
     
@@ -448,8 +443,8 @@ img {
     #logo img {
         /* margin-bottom: 15%; */
 
-        height: 350px;
-        width: 350px;
+        height: 50px;
+        width: 50px;
         
         
     } 
@@ -483,7 +478,7 @@ img {
     
     .h3 {
         
-        font-size: 20px; 
+        font-size: 30px; 
         
     }
    
